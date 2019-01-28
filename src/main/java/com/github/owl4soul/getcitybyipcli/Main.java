@@ -12,11 +12,12 @@ public class Main {
     //
 
     //todo убрать горячие клавишы из ubuntu которые исп-ся в IDEA (Ctrl+Shift+L)
+    //Ctrl+Shift+Alt+L для вызова Reformat File
 
     public static void main(String[] args) throws Throwable {
         System.out.println("i work");
         String ip = args[0]; // например: 97.65.170.121
-        String url = "http://ip-api.com/json/"+ip;
+        String url = "http://ip-api.com/json/" + ip;
 
         URL obj = new URL(url);
         HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
