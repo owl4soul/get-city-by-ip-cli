@@ -15,7 +15,8 @@ public class Main {
 
     public static void main(String[] args) throws Throwable {
         System.out.println("i work");
-        String url = "http://ip-api.com/json/97.65.170.121";
+        String ip = args[0]; // например: 97.65.170.121
+        String url = "http://ip-api.com/json/"+ip;
 
         URL obj = new URL(url);
         HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
